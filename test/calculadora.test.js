@@ -2,7 +2,22 @@ const { somarDoisNumeros }  = require('../src/calculadora');
 const { expect }  = require('chai');
 
 
-describe('Resultado da Soma de dois números', function () {
+describe('Testes da Função de Soma', function () {
+    it('A função deve ser capaz de somar dois números positivos', function () {
+        // Coleta o resultado da função
+        const resultadoDaSoma = somarDoisNumeros(5,3);
+
+        // Compra o resultado com o valor que você espera
+    expect(resultadoDaSoma).to.equal(8);
+    });
+
+    it('A função deve ser capaz de somar um número positivo e um negativo', function () {
+        // Coleta o resultado da função
+        const resultadoDaSoma = somarDoisNumeros(50, -15);
+
+        // Compara o resultado com o valor que você espera
+        expect(resultadoDaSoma).to.equal(35);
+    });
     it('A função deve ser capaz de somar dois números zerados', function() {
         const resultadoDaSomaDeDoisNumeros = somarDoisNumeros(0, 0)
 
