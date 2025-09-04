@@ -7,7 +7,7 @@ describe('Testes da Função de Soma', function () {
         // Coleta o resultado da função
         const resultadoDaSoma = somarDoisNumeros(5,3);
 
-        // Compra o resultado com o valor que você espera
+        // Compara o resultado com o valor que você espera
     expect(resultadoDaSoma).to.equal(8);
     });
 
